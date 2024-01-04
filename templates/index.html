@@ -3,6 +3,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web App</title>
+    <style>
+        body {
+            font-family: 'Dancing Script', cursive;
+            background: linear-gradient(45deg, #FF6B6B, #6BFF6B);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        form {
+            max-width: 400px;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(45deg, #6BFF6B, #FF6B6B);
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            text-align: top;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            color: #333232;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            color: #000000;
+            box-sizing: border-box;
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background: linear-gradient(45deg, #4CAF50, #2196F3);
+            color: #cdcdcd;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: linear-gradient(45deg, #45a049, #1976D2);
+        }
+
+        p {
+            font-size: 18px;
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>House Price Prediction</h1>
@@ -49,7 +108,7 @@
         
     </form>
     
-    <h2> House Price Prediction Result </h2>
-    <p> Predicted House Price : ₹ {{ prediction }} Lakhs</p>
+
+    <h2> Predicted House Price : ₹ {{ prediction }} Lakhs</h2   >
 </body>
 </html>
